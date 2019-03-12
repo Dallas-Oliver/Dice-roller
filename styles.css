@@ -1,0 +1,169 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.wrapper {
+  padding-top: 50px;
+  padding-bottom: auto;
+  height: 100%;
+  width: 100%;
+  background-color: #dddde0;
+  z-index: 1;
+  text-align: center;
+}
+
+.container {
+  background-color: white;
+  margin-right: 0px;
+  margin-left: 0px;
+  display: inline-grid;
+  grid-template-columns: 350px 10px 400px;
+  grid-template-rows: 80px 100px 80px 300px 25px;
+  grid-gap: 10px;
+  border: 1px solid #bfbeb2;
+  border-radius: 12px;
+  box-shadow: 2px 4px 25px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: "Inknut Antiqua", serif;
+}
+
+#heading {
+  text-align: center;
+  grid-column-start: span 3;
+  grid-row-start: 1;
+  font-size: 50px;
+  border-bottom: 1px solid black;
+}
+
+.dropdown {
+  text-align: left;
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.display {
+  text-align: center;
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+#display-image {
+  margin-left: 90px;
+  text-align: center;
+  grid-column-start: 3;
+  grid-row-start: 4;
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: 60px 60px 138px 90px;
+  grid-template-rows: 40px 40px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  grid-column-start: 1;
+  grid-row-start: 3;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#modifier-field {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  margin: 2px;
+  width: 50px;
+}
+
+#modifier-text {
+  margin: 0px;
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+#mod-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#plus-mod {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  position: relative;
+}
+
+#minus-mod {
+  margin-right: 5px;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  position: relative;
+}
+
+#dice-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+#plus-dice {
+  margin-left: 5px;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  width: 25px;
+  height: 25px;
+}
+
+#minus-dice {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  width: 25px;
+  height: 25px;
+}
+
+#dice-count {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  margin: 2px;
+  width: 50px;
+}
+
+#dice-number-text {
+  margin: 0px;
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+
+.dropdown-item:hover {
+  cursor: pointer;
+}
+
+#roll-button {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  visibility: hidden;
+}
+
+#number-rolled {
+  text-align: center;
+  grid-column-start: 1;
+  grid-row-start: 4;
+  font-family: "Cinzel", serif;
+  font-size: 45px;
+}
